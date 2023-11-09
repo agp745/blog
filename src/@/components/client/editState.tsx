@@ -7,6 +7,10 @@ import { cn } from "~/@/lib/utils";
 export function EditState({ className }: { className: string }) {
   const [isEditMode, setIsEditMode] = useState<boolean>(true);
 
+  const setPreview = () => {
+    setIsEditMode(false);
+  };
+
   return (
     <div className={className}>
       <Button

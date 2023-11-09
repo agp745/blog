@@ -1,7 +1,6 @@
 import { Button } from "~/@/components/ui/button";
 import { EditState } from "~/@/components/client/editState";
-import { TagSelect } from "~/@/components/client/tagSelect";
-import { Textarea } from "~/@/components/ui/textarea";
+import { Tags } from "~/@/components/client/tagsDropdown";
 
 export default function NewPost() {
   return (
@@ -20,13 +19,13 @@ export default function NewPost() {
             placeholder="New Title Here..."
             className="w-full text-4xl font-extrabold focus:outline-none"
           />
-          <TagSelect />
+          <Tags />
 
           <div className="h-[2px] w-full bg-neutral-500" />
 
           <textarea
             placeholder="Write content here..."
-            className="h-full resize-none text-lg focus:outline-none"
+            className="h-full resize-none font-mono text-lg focus:outline-none"
           />
         </div>
       </section>
